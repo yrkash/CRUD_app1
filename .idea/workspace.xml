@@ -9,10 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="new Annotation @Valid, @NotEmpty, @Size, @Min, @Email&#10;changes in model, DAO, views">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="PreparedStatement.&#10;Implemented all methods in PersonDAO.java with JDBC-driver: show, save, update, delete">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +24,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="981b5630683768b56a00a87480785e809d13c514" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -47,24 +53,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "3bb5900d2b69444cef94b5bc4984d71c"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3bb5900d2b69444cef94b5bc4984d71c&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.alishev.springcourse.config" />
@@ -182,7 +188,11 @@
       <workItem from="1668977874579" duration="456000" />
       <workItem from="1669041509696" duration="5835000" />
       <workItem from="1669130040793" duration="617000" />
-      <workItem from="1669451112559" duration="4578000" />
+      <workItem from="1669451112559" duration="7183000" />
+      <workItem from="1669480237148" duration="760000" />
+      <workItem from="1669736687852" duration="2551000" />
+      <workItem from="1669753320062" duration="2004000" />
+      <workItem from="1669910032797" duration="3489000" />
     </task>
     <task id="LOCAL-00001" summary="new Annotation: @ModelAttribute, @PostMapping&#10;new method in PeopleController.java: newPerson, create&#10;new new.html (for newPerson method)&#10;Also added empty constructor to model (Person.java) and added save method in DAO">
       <created>1668718124355</created>
@@ -205,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669067717331</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Installed postgresql (name = &quot;firstdb&quot;, postgres/postgres).&#10;Implemented 2 methods in PersonDAO.java with JDBC-driver: index, create">
+      <created>1669476386722</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669476386722</updated>
+    </task>
+    <task id="LOCAL-00005" summary="PreparedStatement.&#10;Implemented all methods in PersonDAO.java with JDBC-driver: show, save, update, delete">
+      <created>1669739176370</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669739176370</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +246,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -238,6 +262,8 @@
     <MESSAGE value="new Annotation: @ModelAttribute, @PostMapping&#10;new method in PeopleController.java: newPerson, create&#10;new new.html (for newPerson method)&#10;Also added empty constructor to model (Person.java) and added save method in DAO" />
     <MESSAGE value="new Annotation: @PatchMapping, @DeleteMapping&#10;new method in PeopleController.java, PersonDAO.java: update, delete&#10;&#10;for filtration hidden field added 2 method in MySpringMvcDispatcherSerlvetIntitializer.java" />
     <MESSAGE value="new Annotation @Valid, @NotEmpty, @Size, @Min, @Email&#10;changes in model, DAO, views" />
-    <option name="LAST_COMMIT_MESSAGE" value="new Annotation @Valid, @NotEmpty, @Size, @Min, @Email&#10;changes in model, DAO, views" />
+    <MESSAGE value="Installed postgresql (name = &quot;firstdb&quot;, postgres/postgres).&#10;Implemented 2 methods in PersonDAO.java with JDBC-driver: index, create" />
+    <MESSAGE value="PreparedStatement.&#10;Implemented all methods in PersonDAO.java with JDBC-driver: show, save, update, delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="PreparedStatement.&#10;Implemented all methods in PersonDAO.java with JDBC-driver: show, save, update, delete" />
   </component>
 </project>
