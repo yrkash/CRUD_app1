@@ -9,11 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="JdbcTemplate.&#10;new dependency in pom.xml (spring-jdbc);&#10;new methods (@Beans) in SpringConfig.java: dataSource (connection to DB), jdbcTemplate.&#10;new value in PersonDAO.java - jdbcTemplate. This is @AutoWired. Also, changed SQL with methods query, update.&#10;Also, written customMapper to load data from DB to Model">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties.origin" afterDir="false" />
+    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="DB config replace to database.properties&#10;@PropertySource">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/controllers/BatchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/batch/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,27 +52,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3bb5900d2b69444cef94b5bc4984d71c&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Laptop/IdeaProjects/CRUD_app1/src/main/webapp/WEB-INF/views/batch",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "3bb5900d2b69444cef94b5bc4984d71c"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.alishev.springcourse.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Laptop\IdeaProjects\CRUD_app1\src\main\webapp\WEB-INF\views\batch" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Laptop\IdeaProjects\CRUD_app1\src\main\java" />
@@ -194,7 +198,7 @@
       <workItem from="1669910032797" duration="6191000" />
       <workItem from="1670152122129" duration="440000" />
       <workItem from="1670267493063" duration="936000" />
-      <workItem from="1670424017931" duration="686000" />
+      <workItem from="1670424017931" duration="3271000" />
     </task>
     <task id="LOCAL-00001" summary="new Annotation: @ModelAttribute, @PostMapping&#10;new method in PeopleController.java: newPerson, create&#10;new new.html (for newPerson method)&#10;Also added empty constructor to model (Person.java) and added save method in DAO">
       <created>1668718124355</created>
@@ -238,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669914086760</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="DB config replace to database.properties&#10;@PropertySource">
+      <created>1670424865671</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670424865671</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +285,7 @@
     <MESSAGE value="Installed postgresql (name = &quot;firstdb&quot;, postgres/postgres).&#10;Implemented 2 methods in PersonDAO.java with JDBC-driver: index, create" />
     <MESSAGE value="PreparedStatement.&#10;Implemented all methods in PersonDAO.java with JDBC-driver: show, save, update, delete" />
     <MESSAGE value="JdbcTemplate.&#10;new dependency in pom.xml (spring-jdbc);&#10;new methods (@Beans) in SpringConfig.java: dataSource (connection to DB), jdbcTemplate.&#10;new value in PersonDAO.java - jdbcTemplate. This is @AutoWired. Also, changed SQL with methods query, update.&#10;Also, written customMapper to load data from DB to Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="JdbcTemplate.&#10;new dependency in pom.xml (spring-jdbc);&#10;new methods (@Beans) in SpringConfig.java: dataSource (connection to DB), jdbcTemplate.&#10;new value in PersonDAO.java - jdbcTemplate. This is @AutoWired. Also, changed SQL with methods query, update.&#10;Also, written customMapper to load data from DB to Model" />
+    <MESSAGE value="DB config replace to database.properties&#10;@PropertySource" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB config replace to database.properties&#10;@PropertySource" />
   </component>
 </project>
