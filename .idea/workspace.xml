@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="JdbcTemplate.&#10;new dependency in pom.xml (spring-jdbc);&#10;new methods (@Beans) in SpringConfig.java: dataSource (connection to DB), jdbcTemplate.&#10;new value in PersonDAO.java - jdbcTemplate. This is @AutoWired. Also, changed SQL with methods query, update.&#10;Also, written customMapper to load data from DB to Model">
+    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="new controller - BatchController.java.&#10;PersonDAO: @AutoWired field environment (SpringConfig.java),&#10;jdbcTemplate.batchUpdate() !!&#10;new view - batch/index.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +197,7 @@
       <workItem from="1670152122129" duration="440000" />
       <workItem from="1670267493063" duration="936000" />
       <workItem from="1670424017931" duration="3271000" />
+      <workItem from="1670435243919" duration="1961000" />
     </task>
     <task id="LOCAL-00001" summary="new Annotation: @ModelAttribute, @PostMapping&#10;new method in PeopleController.java: newPerson, create&#10;new new.html (for newPerson method)&#10;Also added empty constructor to model (Person.java) and added save method in DAO">
       <created>1668718124355</created>
@@ -248,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670424865671</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new controller - BatchController.java.&#10;PersonDAO: @AutoWired field environment (SpringConfig.java),&#10;jdbcTemplate.batchUpdate() !!&#10;new view - batch/index.html">
+      <created>1670434592930</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670434592930</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +272,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -285,6 +292,7 @@
     <MESSAGE value="PreparedStatement.&#10;Implemented all methods in PersonDAO.java with JDBC-driver: show, save, update, delete" />
     <MESSAGE value="JdbcTemplate.&#10;new dependency in pom.xml (spring-jdbc);&#10;new methods (@Beans) in SpringConfig.java: dataSource (connection to DB), jdbcTemplate.&#10;new value in PersonDAO.java - jdbcTemplate. This is @AutoWired. Also, changed SQL with methods query, update.&#10;Also, written customMapper to load data from DB to Model" />
     <MESSAGE value="DB config replace to database.properties&#10;@PropertySource" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB config replace to database.properties&#10;@PropertySource" />
+    <MESSAGE value="new controller - BatchController.java.&#10;PersonDAO: @AutoWired field environment (SpringConfig.java),&#10;jdbcTemplate.batchUpdate() !!&#10;new view - batch/index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="new controller - BatchController.java.&#10;PersonDAO: @AutoWired field environment (SpringConfig.java),&#10;jdbcTemplate.batchUpdate() !!&#10;new view - batch/index.html" />
   </component>
 </project>
