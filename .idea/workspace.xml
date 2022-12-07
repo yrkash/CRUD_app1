@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="PreparedStatement.&#10;Implemented all methods in PersonDAO.java with JDBC-driver: show, save, update, delete">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonMapper.java" afterDir="false" />
+    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="JdbcTemplate.&#10;new dependency in pom.xml (spring-jdbc);&#10;new methods (@Beans) in SpringConfig.java: dataSource (connection to DB), jdbcTemplate.&#10;new value in PersonDAO.java - jdbcTemplate. This is @AutoWired. Also, changed SQL with methods query, update.&#10;Also, written customMapper to load data from DB to Model">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties.origin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +191,10 @@
       <workItem from="1669480237148" duration="760000" />
       <workItem from="1669736687852" duration="2551000" />
       <workItem from="1669753320062" duration="2004000" />
-      <workItem from="1669910032797" duration="3489000" />
+      <workItem from="1669910032797" duration="6191000" />
+      <workItem from="1670152122129" duration="440000" />
+      <workItem from="1670267493063" duration="936000" />
+      <workItem from="1670424017931" duration="686000" />
     </task>
     <task id="LOCAL-00001" summary="new Annotation: @ModelAttribute, @PostMapping&#10;new method in PeopleController.java: newPerson, create&#10;new new.html (for newPerson method)&#10;Also added empty constructor to model (Person.java) and added save method in DAO">
       <created>1668718124355</created>
@@ -229,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669739176370</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="JdbcTemplate.&#10;new dependency in pom.xml (spring-jdbc);&#10;new methods (@Beans) in SpringConfig.java: dataSource (connection to DB), jdbcTemplate.&#10;new value in PersonDAO.java - jdbcTemplate. This is @AutoWired. Also, changed SQL with methods query, update.&#10;Also, written customMapper to load data from DB to Model">
+      <created>1669914086760</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669914086760</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +255,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -264,6 +273,7 @@
     <MESSAGE value="new Annotation @Valid, @NotEmpty, @Size, @Min, @Email&#10;changes in model, DAO, views" />
     <MESSAGE value="Installed postgresql (name = &quot;firstdb&quot;, postgres/postgres).&#10;Implemented 2 methods in PersonDAO.java with JDBC-driver: index, create" />
     <MESSAGE value="PreparedStatement.&#10;Implemented all methods in PersonDAO.java with JDBC-driver: show, save, update, delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="PreparedStatement.&#10;Implemented all methods in PersonDAO.java with JDBC-driver: show, save, update, delete" />
+    <MESSAGE value="JdbcTemplate.&#10;new dependency in pom.xml (spring-jdbc);&#10;new methods (@Beans) in SpringConfig.java: dataSource (connection to DB), jdbcTemplate.&#10;new value in PersonDAO.java - jdbcTemplate. This is @AutoWired. Also, changed SQL with methods query, update.&#10;Also, written customMapper to load data from DB to Model" />
+    <option name="LAST_COMMIT_MESSAGE" value="JdbcTemplate.&#10;new dependency in pom.xml (spring-jdbc);&#10;new methods (@Beans) in SpringConfig.java: dataSource (connection to DB), jdbcTemplate.&#10;new value in PersonDAO.java - jdbcTemplate. This is @AutoWired. Also, changed SQL with methods query, update.&#10;Also, written customMapper to load data from DB to Model" />
   </component>
 </project>
