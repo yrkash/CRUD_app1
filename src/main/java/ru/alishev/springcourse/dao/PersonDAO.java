@@ -59,14 +59,6 @@ public class PersonDAO {
         System.out.println("Time: " + (after - before));
     }
 
-    private List<Person> create1000People() {
-        List<Person> people = new ArrayList<>();
-        for (int i = 0; i < 1000; i++) {
-            people.add(new Person(i, "Name" + i, 30, "test" + i + "@mail.ru"));
-        }
-        return people;
-    }
-
     public void testBatchUpdate() {
         List <Person> people = create1000People();
 
@@ -88,6 +80,16 @@ public class PersonDAO {
         long after = System.currentTimeMillis();
         System.out.println("Time: " + (after - before));
     }
+
+    private List<Person> create1000People() {
+        List<Person> people = new ArrayList<>();
+        for (int i = 0; i < 1000; i++) {
+            people.add(new Person(i, "Name" + i, 30, "test" + i + "@mail.ru"));
+        }
+        return people;
+    }
+
+
 
 
 }
