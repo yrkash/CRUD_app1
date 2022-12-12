@@ -9,10 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="JOIN, Relations in DB (1-1, 1-Many, Many-Many).">
+    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="REFERENCES (FK).&#10;ON DELETE CASCADE или ON DELETE SET NULL">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/util/PersonValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DB_Practice.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB_Practice.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties.origin" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties.origin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,28 +52,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Laptop/IdeaProjects/CRUD_app1/src/main/webapp/WEB-INF/views/batch",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "3bb5900d2b69444cef94b5bc4984d71c"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laptop/IdeaProjects/CRUD_app1/src/main/webapp/WEB-INF/views/batch&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3bb5900d2b69444cef94b5bc4984d71c&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
-      "PostgreSQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;PostgreSQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.alishev.springcourse.config" />
@@ -204,7 +205,8 @@
       <workItem from="1670435243919" duration="2110000" />
       <workItem from="1670512929359" duration="207000" />
       <workItem from="1670702167624" duration="1776000" />
-      <workItem from="1670744988359" duration="6446000" />
+      <workItem from="1670744988359" duration="7513000" />
+      <workItem from="1670872825798" duration="1704000" />
     </task>
     <task id="LOCAL-00001" summary="new Annotation: @ModelAttribute, @PostMapping&#10;new method in PeopleController.java: newPerson, create&#10;new new.html (for newPerson method)&#10;Also added empty constructor to model (Person.java) and added save method in DAO">
       <created>1668718124355</created>
@@ -276,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670750018607</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="REFERENCES (FK).&#10;ON DELETE CASCADE или ON DELETE SET NULL">
+      <created>1670752502236</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670752502236</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +325,7 @@
     <MESSAGE value="new controller - BatchController.java.&#10;PersonDAO: @AutoWired field environment (SpringConfig.java),&#10;jdbcTemplate.batchUpdate() !!&#10;new view - batch/index.html" />
     <MESSAGE value="Create table person again with changes:&#10;field id have type &quot;int generated by default as identity&quot;.&#10;Ghanged sql-request in PersonDAO.java" />
     <MESSAGE value="JOIN, Relations in DB (1-1, 1-Many, Many-Many)." />
-    <option name="LAST_COMMIT_MESSAGE" value="JOIN, Relations in DB (1-1, 1-Many, Many-Many)." />
+    <MESSAGE value="REFERENCES (FK).&#10;ON DELETE CASCADE или ON DELETE SET NULL" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFERENCES (FK).&#10;ON DELETE CASCADE или ON DELETE SET NULL" />
   </component>
 </project>
