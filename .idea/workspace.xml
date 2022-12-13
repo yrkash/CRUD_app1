@@ -9,13 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="class PersonValidator (check that email is unique);&#10;new method show(email) in PersonDAO;&#10;new bean (personValidator) in PeopleController.java">
+    <list default="true" id="a8373fb6-561f-4aef-b9ee-126d06e0e6a8" name="Changes" comment="New field &quot;address&quot; in Person.java, DB. Changed methods in PersonDAO.java. @Pattern for field using for validation.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/controllers/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -54,36 +51,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laptop/IdeaProjects/CRUD_app1/src/main/webapp/WEB-INF/views/batch&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3bb5900d2b69444cef94b5bc4984d71c&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Laptop/IdeaProjects/CRUD_app1/src/main/webapp/WEB-INF/views/admin",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "3bb5900d2b69444cef94b5bc4984d71c"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
-      &quot;PostgreSQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.alishev.springcourse.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Laptop\IdeaProjects\CRUD_app1\src\main\webapp\WEB-INF\views\admin" />
       <recent name="C:\Users\Laptop\IdeaProjects\CRUD_app1\src\main\webapp\WEB-INF\views\batch" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Laptop\IdeaProjects\CRUD_app1\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\Laptop\IdeaProjects\CRUD_app1\src\main\java" />
     </key>
   </component>
@@ -209,7 +208,7 @@
       <workItem from="1670702167624" duration="1776000" />
       <workItem from="1670744988359" duration="7513000" />
       <workItem from="1670872825798" duration="3667000" />
-      <workItem from="1670946826245" duration="1659000" />
+      <workItem from="1670946826245" duration="10123000" />
     </task>
     <task id="LOCAL-00001" summary="new Annotation: @ModelAttribute, @PostMapping&#10;new method in PeopleController.java: newPerson, create&#10;new new.html (for newPerson method)&#10;Also added empty constructor to model (Person.java) and added save method in DAO">
       <created>1668718124355</created>
@@ -295,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670875102890</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="New field &quot;address&quot; in Person.java, DB. Changed methods in PersonDAO.java. @Pattern for field using for validation.">
+      <created>1670949185332</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670949185332</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +343,7 @@
     <MESSAGE value="JOIN, Relations in DB (1-1, 1-Many, Many-Many)." />
     <MESSAGE value="REFERENCES (FK).&#10;ON DELETE CASCADE или ON DELETE SET NULL" />
     <MESSAGE value="class PersonValidator (check that email is unique);&#10;new method show(email) in PersonDAO;&#10;new bean (personValidator) in PeopleController.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="class PersonValidator (check that email is unique);&#10;new method show(email) in PersonDAO;&#10;new bean (personValidator) in PeopleController.java" />
+    <MESSAGE value="New field &quot;address&quot; in Person.java, DB. Changed methods in PersonDAO.java. @Pattern for field using for validation." />
+    <option name="LAST_COMMIT_MESSAGE" value="New field &quot;address&quot; in Person.java, DB. Changed methods in PersonDAO.java. @Pattern for field using for validation." />
   </component>
 </project>
